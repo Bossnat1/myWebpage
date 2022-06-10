@@ -74,6 +74,10 @@
     padding: 2px 4px;
 }
 
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 
 @media (max-width: 769px) {
     .needs-validation {
@@ -89,6 +93,10 @@
 
     .navbar-brand {
         font-size: 35px;
+    }
+
+    a:-webkit-any-link {
+        text-decoration: none;
     }
 }
 
@@ -117,9 +125,7 @@
         text-decoration: none;
         marker: none;
         font-size: 25px;
-    }
-
-    
+    }    
 
     a:-webkit-any-link {
         text-decoration: none;
