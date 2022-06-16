@@ -73,6 +73,7 @@
 
 #landing-section input[type="text"], select, #landing-section input[type="email"], #landing-section input[type="number"] {
     height: 40px;
+    width: 40%;
 }
 
 #landing-section form {
@@ -80,6 +81,18 @@
     margin: 0 auto;
     padding-left: 550px;
     background-color: aqua;
+    border: 1px solid brown;
+    padding-top: 15px;
+}
+
+.enter-part {
+    margin-right: 50px;
+}
+
+.col-12 button {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .invalid-feedback {
