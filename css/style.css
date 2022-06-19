@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+#main-page {
+    background-image: url(../img/background.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -65,24 +73,28 @@
     font-size: 25px;
 }
 
-#loan-section {
+/* #loan-section {
     background-image: url(https://www.financialexpress.com/wp-content/uploads/2022/02/HOME-LOAN-HIKE1200X800.jpg);
     height: 700px;
     margin-bottom: 30px;
-}
+} */
 
 #landing-section input[type="text"], select, #landing-section input[type="email"], #landing-section input[type="number"] {
     height: 40px;
     width: 40%;
+    margin-bottom: 15px;
+}
+
+#landing-section input[type="number"], select {
+    margin-left: 70px;
 }
 
 #landing-section form {
     font-size: 35px;
-    margin: 0 auto;
-    padding-left: 550px;
-    background-color: aqua;
-    border: 1px solid brown;
-    padding-top: 15px;
+    padding-left: 150px;
+    /* background-color: aqua;
+    border: 1px solid brown; */
+    padding-top: 95px;
 }
 
 .enter-part {
@@ -97,5 +109,35 @@
 
 .invalid-feedback {
     display: none;
+}
+
+
+@media (max-width: 426px) {
+    .container-fluid {
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 100px;
+        height: 200px;
+    }
+
+    .navbar-brand {
+        padding-bottom: 30px;
+    }
+
+    #landing-section form {
+        padding-left: 10px;
+    }
+
+    #landing-section input[type="text"], select, #landing-section input[type="email"], #landing-section input[type="number"] {
+        width: 50%;
+    }
+
+    .col-md-6 p {
+        width: 80%;
+    }
+
+    #contact-section form {
+        width: 90%;
+    }
 }
 
